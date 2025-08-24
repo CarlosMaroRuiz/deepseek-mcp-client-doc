@@ -3,28 +3,231 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
-
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Colores para tema claro - basados en la paleta oscura pero más claros */
+  --ifm-color-primary: #4C77D5;        /* Azul */
+  --ifm-color-primary-dark: #3A5FC0;
+  --ifm-color-primary-darker: #2F4DB0;
+  --ifm-color-primary-darkest: #243B90;
+  --ifm-color-primary-light: #6B8FE0;
+  --ifm-color-primary-lighter: #8AA7EB;
+  --ifm-color-primary-lightest: #A9BFF6;
+  
+  /* Color de acento púrpura */
+  --ifm-color-secondary: #8956E4;
+  --ifm-color-info: #8956E4;
+  
+  /* Fondo y texto para tema claro */
+  --ifm-background-color: #F5F5F5;
+  --ifm-color-content: #1F2124;
+  
+  /* Código */
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(137, 86, 228, 0.1);
+  
+  /* Navbar */
+  --ifm-navbar-background-color: #2F3136;
+  --ifm-navbar-link-color: #B8BFC5;
+  
+  /* Footer */
+  --ifm-footer-background-color: #2F3136;
+  --ifm-footer-color: #B8BFC5;
+  --ifm-footer-link-color: #4C77D5;
 }
-
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Tema Oscuro - Paleta monocromática con acentos azul/púrpura */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  /* Gradiente de azul a púrpura como primario */
+  --ifm-color-primary: #4C77D5;        /* Azul */
+  --ifm-color-primary-dark: #4469C0;
+  --ifm-color-primary-darker: #3B5CB0;
+  --ifm-color-primary-darkest: #3350A0;
+  --ifm-color-primary-light: #5E85DE;
+  --ifm-color-primary-lighter: #7093E7;
+  --ifm-color-primary-lightest: #82A1F0;
+  
+  /* Color secundario púrpura */
+  --ifm-color-secondary: #8956E4;
+  
+  /* Fondos oscuros monocromáticos */
+  --ifm-background-color: #1F2124;    /* Fondo principal */
+  --ifm-background-surface-color: #2F3136;  /* Paneles y elementos */
+  
+  /* Texto gris claro */
+  --ifm-color-content: #B8BFC5;
+  --ifm-color-content-secondary: #9CA3AF;
+  
+  /* Navbar */
+  --ifm-navbar-background-color: #2F3136;
+  --ifm-navbar-link-color: #B8BFC5;
+  --ifm-navbar-link-hover-color: #4C77D5;
+  
+  /* Sidebar */
+  --ifm-menu-color: #B8BFC5;
+  --ifm-menu-color-background-active: rgba(76, 119, 213, 0.15);
+  --ifm-menu-color-background-hover: rgba(76, 119, 213, 0.1);
+  
+  /* Footer */
+  --ifm-footer-background-color: #2F3136;
+  --ifm-footer-color: #B8BFC5;
+  --ifm-footer-link-color: #4C77D5;
+  --ifm-footer-link-hover-color: #8956E4;
+  
+  /* Cards y contenedores */
+  --ifm-card-background-color: #2F3136;
+  --ifm-card-border-radius: 8px;
+  
+  /* Code blocks */
+  --ifm-code-background: #2F3136;
+  --ifm-pre-background: #1F2124;
+  --docusaurus-highlighted-code-line-bg: rgba(137, 86, 228, 0.2);
+  
+  /* Alertas y admonitions */
+  --ifm-alert-background-color: #2F3136;
+  --ifm-alert-border-left-width: 4px;
+  
+  /* Links */
+  --ifm-link-color: #4C77D5;
+  --ifm-link-hover-color: #8956E4;
+  
+  /* Bordes */
+  --ifm-border-color: #3E4147;
+  --ifm-table-border-color: #3E4147;
+}
+/* Mejoras adicionales para la paleta monocromática */
+.navbar__brand {
+  color: var(--ifm-navbar-link-color) !important;
+}
+.navbar__item {
+  color: var(--ifm-navbar-link-color);
+}
+.navbar__link:hover,
+.navbar__link--active {
+  color: var(--ifm-color-primary) !important;
+}
+/* Botones con gradiente azul a púrpura */
+.button--primary {
+  background: linear-gradient(135deg, #4C77D5 0%, #8956E4 100%);
+  border: none;
+}
+.button--primary:hover {
+  background: linear-gradient(135deg, #3A5FC0 0%, #7A46D4 100%);
+  border: none;
+}
+.button--secondary {
+  background-color: transparent;
+  border-color: var(--ifm-color-secondary);
+  color: var(--ifm-color-secondary);
+}
+.button--secondary:hover {
+  background-color: var(--ifm-color-secondary);
+  color: #ffffff;
+}
+/* Sidebar mejorado */
+.theme-doc-sidebar-container {
+  background-color: var(--ifm-background-surface-color);
+  border-right: 1px solid var(--ifm-border-color);
+}
+.menu__link {
+  border-radius: 6px;
+  margin: 2px 0;
+}
+.menu__link--active {
+  background-color: var(--ifm-menu-color-background-active);
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+/* Code blocks con mejor contraste */
+.prism-code {
+  background-color: var(--ifm-pre-background) !important;
+}
+code {
+  background-color: var(--ifm-code-background);
+  color: #8956E4;
+  border: 1px solid var(--ifm-border-color);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+/* Cards con sombra sutil */
+.card {
+  background-color: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-border-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(76, 119, 213, 0.2);
+}
+/* Admonitions con mejor contraste */
+.admonition {
+  background-color: var(--ifm-alert-background-color);
+  border: 1px solid var(--ifm-border-color);
+}
+.admonition-heading {
+  font-weight: 700;
+}
+.admonition.admonition-tip {
+  border-left-color: var(--ifm-color-primary);
+}
+.admonition.admonition-warning {
+  border-left-color: #FBBF24;
+}
+.admonition.admonition-danger {
+  border-left-color: #EF4444;
+}
+/* Tabla con mejor estilo */
+.table-of-contents {
+  background-color: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-border-color);
+  border-radius: 8px;
+  padding: 16px;
+}
+/* Hero section mejorado */
+.hero {
+  background: linear-gradient(135deg, #1F2124 0%, #2F3136 100%);
+  color: #B8BFC5;
+}
+.hero__title {
+  color: #B8BFC5;
+}
+.hero__subtitle {
+  color: #9CA3AF;
+}
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--ifm-background-color);
+}
+::-webkit-scrollbar-thumb {
+  background: #3E4147;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ifm-color-primary);
+}
+/* Estilo para el icono de usuario */
+.avatar {
+  background-color: #9455E4;
+  color: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+/* Barra de búsqueda con estilo personalizado */
+.navbar__search-input {
+  background-color: #2F3136;
+  color: #B8BFC5;
+  border: 1px solid #3E4147;
+  border-radius: 6px;
+}
+.navbar__search-input:focus {
+  border-color: #4C77D5;
+  box-shadow: 0 0 0 2px rgba(76, 119, 213, 0.2);
 }

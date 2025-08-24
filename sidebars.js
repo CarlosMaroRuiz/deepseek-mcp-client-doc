@@ -1,5 +1,4 @@
 // @ts-check
-
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /**
@@ -25,7 +24,7 @@ const sidebars = {
     // Configuración
     {
       type: 'category',
-      label: '⚙️ Configuración',
+      label: 'Configuración',
       collapsed: false,
       items: [
         'configuration/http-servers',
@@ -37,7 +36,7 @@ const sidebars = {
     // Logging
     {
       type: 'category',
-      label: '📝 Logging',
+      label: 'Logging',
       collapsed: false,
       items: [
         'logging/enable-logging',
@@ -46,45 +45,7 @@ const sidebars = {
       ],
     },
     
-    // Uso avanzado
-    {
-      type: 'category',
-      label: '🚀 Uso Avanzado',
-      collapsed: false,
-      items: [
-        'advanced-usage/custom-server-config',
-        'advanced-usage/error-handling',
-        'advanced-usage/working-with-results',
-      ],
-    },
-    
-    // Casos de uso
-    {
-      type: 'category',
-      label: '💼 Casos de Uso',
-      collapsed: false,
-      items: [
-        'use-cases/database-analysis',
-        'use-cases/e-commerce-integration',
-        'use-cases/document-generation',
-      ],
-    },
-    
-    // Referencia de API
-    {
-      type: 'category',
-      label: '📚 API Reference',
-      collapsed: false,
-      items: [
-        'api-reference/deepseek-client',
-        'api-reference/client-result',
-        'api-reference/mcp-server-config',
-      ],
-    },
-    
-    // Documentos adicionales
-    'environment-variables',
-    'compatible-servers',
+
   ],
 };
 

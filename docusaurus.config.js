@@ -76,12 +76,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/deepseek-mcp-social-card.jpg',
+      image: 'img/deepseekmcp.png',
       navbar: {
         title: 'DeepSeek MCP Client',
         logo: {
           alt: 'DeepSeek MCP Client Logo',
-          src: 'img/logo.svg',
+          src: 'img/deepseekmcp.png',
         },
         items: [
           {

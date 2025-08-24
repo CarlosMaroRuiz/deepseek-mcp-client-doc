@@ -1,0 +1,8 @@
+{
+  "label": "Comenzar",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Todo lo que necesitas para comenzar con DeepSeek MCP Client."
+  }
+}
