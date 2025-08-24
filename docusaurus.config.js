@@ -5,7 +5,6 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 import {themes as prismThemes} from 'prism-react-renderer';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'DeepSeek MCP Client',
@@ -37,7 +36,6 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
   presets: [
     [
       'classic',
@@ -71,7 +69,6 @@ const config = {
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -86,7 +83,7 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar', // ✅ CAMBIADO: era 'docsSidebar'
+            sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Documentation',
           },
@@ -134,29 +131,10 @@ const config = {
                 label: 'STDIO Servers',
                 to: '/docs/configuration/stdio-servers',
               },
-              {
-                label: 'Environment Variables',
-                to: '/docs/environment-variables',
-              },
+              // Eliminado: Environment Variables (no existe)
             ],
           },
-          {
-            title: 'API Reference',
-            items: [
-              {
-                label: 'DeepSeek Client',
-                to: '/docs/api-reference/deepseek-client',
-              },
-              {
-                label: 'Client Result',
-                to: '/docs/api-reference/client-result',
-              },
-              {
-                label: 'MCP Server Config',
-                to: '/docs/api-reference/mcp-server-config',
-              },
-            ],
-          },
+          // SECCIÓN ELIMINADA: API Reference
           {
             title: 'Community & More',
             items: [
@@ -172,10 +150,7 @@ const config = {
                 label: 'PyPI',
                 href: 'https://pypi.org/project/deepseek-mcp-client/',
               },
-              {
-                label: 'Compatible Servers',
-                to: '/docs/compatible-servers',
-              },
+              // Eliminado: Compatible Servers (no existe)
             ],
           },
         ],
@@ -188,5 +163,4 @@ const config = {
       },
     }),
 };
-
 export default config;
