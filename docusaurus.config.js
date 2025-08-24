@@ -20,11 +20,11 @@ const config = {
   url: 'https://carlosmaroruiz.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/deepseek-mcp-client/',
+  baseUrl: '/deepseek-mcp-client-doc/',  // CORREGIDO: Debe coincidir con el nombre del repositorio
   
   // GitHub pages deployment config.
   organizationName: 'CarlosMaroRuiz', // Usually your GitHub org/user name.
-  projectName: 'deepseek-mcp-client', // Usually your repo name.
+  projectName: 'deepseek-mcp-client-doc', // CORREGIDO: Debe coincidir con el nombre real del repositorio
   
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -46,7 +46,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/CarlosMaroRuiz/deepseek-mcp-client/tree/main/docs',
+            'https://github.com/CarlosMaroRuiz/deepseek-mcp-client-doc/tree/main/docs', // CORREGIDO
         },
         blog: {
           showReadingTime: true,
@@ -57,7 +57,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/CarlosMaroRuiz/deepseek-mcp-client/tree/main/blog',
+            'https://github.com/CarlosMaroRuiz/deepseek-mcp-client-doc/tree/main/blog', // CORREGIDO
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -89,7 +89,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/CarlosMaroRuiz/deepseek-mcp-client',
+            href: 'https://github.com/CarlosMaroRuiz/deepseek-mcp-client-doc', // CORREGIDO
             label: 'GitHub',
             position: 'right',
           },
@@ -144,7 +144,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/CarlosMaroRuiz/deepseek-mcp-client',
+                href: 'https://github.com/CarlosMaroRuiz/deepseek-mcp-client-doc', // CORREGIDO
               },
               {
                 label: 'PyPI',
