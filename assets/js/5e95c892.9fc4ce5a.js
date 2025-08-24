@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdeepseek_mcp_client_docs=self.webpackChunkdeepseek_mcp_client_docs||[]).push([[9647],{7121:(e,s,c)=>{c.r(s),c.d(s,{default:()=>a});c(6540);var r=c(4164),d=c(7559),n=c(5500),p=c(2831),t=c(1656),u=c(4848);function a(e){return(0,u.jsx)(n.e3,{className:(0,r.A)(d.G.wrapper.docsPages),children:(0,u.jsx)(t.A,{children:(0,p.v)(e.route.routes)})})}}}]);
