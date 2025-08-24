@@ -1,181 +1,203 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Nueva paleta de colores inspirada en el logo de la ballena azul marino
  */
-/* You can override the default Infima variables here. */
 :root {
-  /* Colores para tema claro - basados en la paleta oscura pero más claros */
-  --ifm-color-primary: #4C77D5;        /* Azul */
-  --ifm-color-primary-dark: #3A5FC0;
-  --ifm-color-primary-darker: #2F4DB0;
-  --ifm-color-primary-darkest: #243B90;
-  --ifm-color-primary-light: #6B8FE0;
-  --ifm-color-primary-lighter: #8AA7EB;
-  --ifm-color-primary-lightest: #A9BFF6;
+  /* Colores para tema claro - basados en azules oceánicos */
+  --ifm-color-primary: #1E3A5F;        /* Azul marino (del logo) */
+  --ifm-color-primary-dark: #193352;
+  --ifm-color-primary-darker: #142C46;
+  --ifm-color-primary-darkest: #0F2439;
+  --ifm-color-primary-light: #274A76;
+  --ifm-color-primary-lighter: #315A8D;
+  --ifm-color-primary-lightest: #3B6AA3;
   
-  /* Color de acento púrpura */
-  --ifm-color-secondary: #8956E4;
-  --ifm-color-info: #8956E4;
+  /* Color de acento turquesa/aguamarina que combina con azul marino */
+  --ifm-color-secondary: #20BDBE;
+  --ifm-color-info: #20BDBE;
   
   /* Fondo y texto para tema claro */
-  --ifm-background-color: #F5F5F5;
-  --ifm-color-content: #1F2124;
+  --ifm-background-color: #F5F8FC;
+  --ifm-color-content: #1A2638;
   
   /* Código */
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(137, 86, 228, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(32, 189, 190, 0.1);
   
   /* Navbar */
-  --ifm-navbar-background-color: #2F3136;
-  --ifm-navbar-link-color: #B8BFC5;
+  --ifm-navbar-background-color: #1E3A5F;
+  --ifm-navbar-link-color: #E0E7F1;
   
   /* Footer */
-  --ifm-footer-background-color: #2F3136;
-  --ifm-footer-color: #B8BFC5;
-  --ifm-footer-link-color: #4C77D5;
+  --ifm-footer-background-color: #1E3A5F;
+  --ifm-footer-color: #E0E7F1;
+  --ifm-footer-link-color: #20BDBE;
 }
-/* Tema Oscuro - Paleta monocromática con acentos azul/púrpura */
+
+/* Tema Oscuro - Paleta oceánica profunda */
 [data-theme='dark'] {
-  /* Gradiente de azul a púrpura como primario */
-  --ifm-color-primary: #4C77D5;        /* Azul */
-  --ifm-color-primary-dark: #4469C0;
-  --ifm-color-primary-darker: #3B5CB0;
-  --ifm-color-primary-darkest: #3350A0;
-  --ifm-color-primary-light: #5E85DE;
-  --ifm-color-primary-lighter: #7093E7;
-  --ifm-color-primary-lightest: #82A1F0;
+  /* Azul marino como primario */
+  --ifm-color-primary: #3B6AA3;       /* Azul marino más brillante para destacar en oscuridad */
+  --ifm-color-primary-dark: #315A8D;
+  --ifm-color-primary-darker: #274A76;
+  --ifm-color-primary-darkest: #1E3A5F;
+  --ifm-color-primary-light: #4579B5;
+  --ifm-color-primary-lighter: #5889C7;
+  --ifm-color-primary-lightest: #6A99D5;
   
-  /* Color secundario púrpura */
-  --ifm-color-secondary: #8956E4;
+  /* Color secundario turquesa/aguamarina */
+  --ifm-color-secondary: #20BDBE;
   
-  /* Fondos oscuros monocromáticos */
-  --ifm-background-color: #1F2124;    /* Fondo principal */
-  --ifm-background-surface-color: #2F3136;  /* Paneles y elementos */
+  /* Fondos oscuros oceánicos */
+  --ifm-background-color: #0A1623;    /* Fondo principal - azul oscuro profundo */
+  --ifm-background-surface-color: #11202F;  /* Paneles y elementos */
   
-  /* Texto gris claro */
-  --ifm-color-content: #B8BFC5;
-  --ifm-color-content-secondary: #9CA3AF;
+  /* Texto en tonos claros */
+  --ifm-color-content: #E0E7F1;
+  --ifm-color-content-secondary: #C2D1E3;
   
   /* Navbar */
-  --ifm-navbar-background-color: #2F3136;
-  --ifm-navbar-link-color: #B8BFC5;
-  --ifm-navbar-link-hover-color: #4C77D5;
+  --ifm-navbar-background-color: #11202F;
+  --ifm-navbar-link-color: #E0E7F1;
+  --ifm-navbar-link-hover-color: #20BDBE;
   
   /* Sidebar */
-  --ifm-menu-color: #B8BFC5;
-  --ifm-menu-color-background-active: rgba(76, 119, 213, 0.15);
-  --ifm-menu-color-background-hover: rgba(76, 119, 213, 0.1);
+  --ifm-menu-color: #E0E7F1;
+  --ifm-menu-color-background-active: rgba(32, 189, 190, 0.15);
+  --ifm-menu-color-background-hover: rgba(32, 189, 190, 0.1);
   
   /* Footer */
-  --ifm-footer-background-color: #2F3136;
-  --ifm-footer-color: #B8BFC5;
-  --ifm-footer-link-color: #4C77D5;
-  --ifm-footer-link-hover-color: #8956E4;
+  --ifm-footer-background-color: #11202F;
+  --ifm-footer-color: #E0E7F1;
+  --ifm-footer-link-color: #20BDBE;
+  --ifm-footer-link-hover-color: #5DD9DA;
   
   /* Cards y contenedores */
-  --ifm-card-background-color: #2F3136;
+  --ifm-card-background-color: #11202F;
   --ifm-card-border-radius: 8px;
   
   /* Code blocks */
-  --ifm-code-background: #2F3136;
-  --ifm-pre-background: #1F2124;
-  --docusaurus-highlighted-code-line-bg: rgba(137, 86, 228, 0.2);
+  --ifm-code-background: #11202F;
+  --ifm-pre-background: #0A1623;
+  --docusaurus-highlighted-code-line-bg: rgba(32, 189, 190, 0.2);
   
   /* Alertas y admonitions */
-  --ifm-alert-background-color: #2F3136;
+  --ifm-alert-background-color: #11202F;
   --ifm-alert-border-left-width: 4px;
   
   /* Links */
-  --ifm-link-color: #4C77D5;
-  --ifm-link-hover-color: #8956E4;
+  --ifm-link-color: #20BDBE;
+  --ifm-link-hover-color: #5DD9DA;
   
   /* Bordes */
-  --ifm-border-color: #3E4147;
-  --ifm-table-border-color: #3E4147;
+  --ifm-border-color: #1E3A5F;
+  --ifm-table-border-color: #1E3A5F;
 }
-/* Mejoras adicionales para la paleta monocromática */
+
+/* Mejoras adicionales para la paleta oceánica */
 .navbar__brand {
   color: var(--ifm-navbar-link-color) !important;
 }
+
 .navbar__item {
   color: var(--ifm-navbar-link-color);
 }
+
 .navbar__link:hover,
 .navbar__link--active {
-  color: var(--ifm-color-primary) !important;
+  color: var(--ifm-color-secondary) !important;
 }
-/* Botones con gradiente azul a púrpura */
+
+/* Botones con estilo sutil y borde */
 .button--primary {
-  background: linear-gradient(135deg, #4C77D5 0%, #8956E4 100%);
-  border: none;
+  background-color: #1E3A5F;
+  color: #E0E7F1;
+  border: 1px solid rgba(32, 189, 190, 0.4);
+  transition: all 0.3s ease;
 }
+
 .button--primary:hover {
-  background: linear-gradient(135deg, #3A5FC0 0%, #7A46D4 100%);
-  border: none;
+  background-color: #254670;
+  border-color: rgba(32, 189, 190, 0.7);
 }
+
 .button--secondary {
   background-color: transparent;
-  border-color: var(--ifm-color-secondary);
-  color: var(--ifm-color-secondary);
+  border: 1px solid rgba(32, 189, 190, 0.4);
+  color: #E0E7F1;
 }
+
 .button--secondary:hover {
-  background-color: var(--ifm-color-secondary);
-  color: #ffffff;
+  background-color: rgba(32, 189, 190, 0.1);
+  border-color: rgba(32, 189, 190, 0.7);
+  color: #E0E7F1;
 }
+
 /* Sidebar mejorado */
 .theme-doc-sidebar-container {
   background-color: var(--ifm-background-surface-color);
   border-right: 1px solid var(--ifm-border-color);
 }
+
 .menu__link {
   border-radius: 6px;
   margin: 2px 0;
 }
+
 .menu__link--active {
   background-color: var(--ifm-menu-color-background-active);
-  color: var(--ifm-color-primary);
+  color: var(--ifm-color-secondary);
   font-weight: 600;
 }
+
 /* Code blocks con mejor contraste */
 .prism-code {
   background-color: var(--ifm-pre-background) !important;
 }
+
 code {
   background-color: var(--ifm-code-background);
-  color: #8956E4;
+  color: #20BDBE;
   border: 1px solid var(--ifm-border-color);
   border-radius: 4px;
   padding: 2px 6px;
 }
-/* Cards con sombra sutil */
+
+/* Cards con sombra oceánica */
 .card {
   background-color: var(--ifm-card-background-color);
   border: 1px solid var(--ifm-border-color);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 16px rgba(10, 22, 35, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(76, 119, 213, 0.2);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(32, 189, 190, 0.3);
+  border-color: var(--ifm-color-secondary);
 }
+
 /* Admonitions con mejor contraste */
 .admonition {
   background-color: var(--ifm-alert-background-color);
   border: 1px solid var(--ifm-border-color);
 }
+
 .admonition-heading {
   font-weight: 700;
 }
+
 .admonition.admonition-tip {
-  border-left-color: var(--ifm-color-primary);
+  border-left-color: var(--ifm-color-secondary);
 }
+
 .admonition.admonition-warning {
-  border-left-color: #FBBF24;
+  border-left-color: #FFB347;
 }
+
 .admonition.admonition-danger {
-  border-left-color: #EF4444;
+  border-left-color: #FF6B6B;
 }
+
 /* Tabla con mejor estilo */
 .table-of-contents {
   background-color: var(--ifm-background-surface-color);
@@ -183,34 +205,42 @@ code {
   border-radius: 8px;
   padding: 16px;
 }
-/* Hero section mejorado */
+
+/* Hero section con gradiente oceánico */
 .hero {
-  background: linear-gradient(135deg, #1F2124 0%, #2F3136 100%);
-  color: #B8BFC5;
+  background: linear-gradient(135deg, #0A1623 0%, #1E3A5F 100%);
+  color: #E0E7F1;
 }
+
 .hero__title {
-  color: #B8BFC5;
+  color: #E0E7F1;
 }
+
 .hero__subtitle {
-  color: #9CA3AF;
+  color: #C2D1E3;
 }
+
 /* Scrollbar personalizada */
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--ifm-background-color);
 }
+
 ::-webkit-scrollbar-thumb {
-  background: #3E4147;
+  background: #1E3A5F;
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--ifm-color-primary);
+  background: var(--ifm-color-secondary);
 }
+
 /* Estilo para el icono de usuario */
 .avatar {
-  background-color: #9455E4;
+  background-color: #20BDBE;
   color: white;
   border-radius: 50%;
   width: 32px;
@@ -220,14 +250,16 @@ code {
   justify-content: center;
   font-weight: bold;
 }
+
 /* Barra de búsqueda con estilo personalizado */
 .navbar__search-input {
-  background-color: #2F3136;
-  color: #B8BFC5;
-  border: 1px solid #3E4147;
+  background-color: #11202F;
+  color: #E0E7F1;
+  border: 1px solid #1E3A5F;
   border-radius: 6px;
 }
+
 .navbar__search-input:focus {
-  border-color: #4C77D5;
-  box-shadow: 0 0 0 2px rgba(76, 119, 213, 0.2);
+  border-color: #20BDBE;
+  box-shadow: 0 0 0 2px rgba(32, 189, 190, 0.2);
 }

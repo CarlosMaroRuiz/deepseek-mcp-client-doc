@@ -48,21 +48,7 @@ const config = {
           editUrl:
             'https://github.com/CarlosMaroRuiz/deepseek-mcp-client-doc/tree/main/docs', // CORREGIDO
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/CarlosMaroRuiz/deepseek-mcp-client-doc/tree/main/blog', // CORREGIDO
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        // Blog section removed
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -87,7 +73,7 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          // Blog link removed
           {
             href: 'https://github.com/CarlosMaroRuiz/deepseek-mcp-client-doc', // CORREGIDO
             label: 'GitHub',
@@ -138,10 +124,7 @@ const config = {
           {
             title: 'Community & More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
+              // Blog link removed
               {
                 label: 'GitHub',
                 href: 'https://github.com/CarlosMaroRuiz/deepseek-mcp-client-doc', // CORREGIDO

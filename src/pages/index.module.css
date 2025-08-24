@@ -1,23 +1,99 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
+/* index.module.css - Para la página Home */
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(135deg, #0A1623 0%, #1E3A5F 100%);
+  width: 100%;
+  margin: 0;
+  color: #E0E7F1;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.logoContainer {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.logo {
+  height: 180px;
+  width: auto;
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
+  transition: all 0.5s ease;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.9));
+  transform: scale(1.05);
 }
 
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 2rem;
+}
+
+.buttons a {
+  background-color: #1E3A5F;
+  color: #E0E7F1;
+  border: 1px solid rgba(32, 189, 190, 0.4);
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+
+.buttons a:hover {
+  background-color: #254670;
+  border-color: rgba(32, 189, 190, 0.7);
+  transform: translateY(-2px);
+}
+
+.fullWidth {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* styles.module.css - Para HomepageFeatures */
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+  background-color: #0A1623;
+  color: #E0E7F1;
+}
+
+.featureImage {
+  height: 200px;
+  width: 200px;
+}
+
+.featureCard {
+  background-color: #11202F;
+  border: 1px solid #1E3A5F;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 16px rgba(10, 22, 35, 0.5);
+}
+
+.featureCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(32, 189, 190, 0.3);
+  border-color: #20BDBE;
+}
+
+/* Para hacer el sitio completamente responsive */
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+  
+  .logo {
+    height: 80px;
+  }
 }
